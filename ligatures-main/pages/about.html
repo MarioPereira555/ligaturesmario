@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Ligatures</title>
+    
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      
+      .nav-items {
+        opacity: 0;
+        transform: translateX(-20px);
+        pointer-events: none;
+        transition: all 300ms ease-in-out;
+      }
+      .nav-items.active {
+        opacity: 1;
+        transform: translateX(0);
+        pointer-events: auto;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white">
+    <header class="p-4 flex items-center justify-between">
+      <div
+        class="fixed top-0 left-0 right-0 flex items-center justify-start p-4"
+      >
+        <a href="../main.html">
+          <img
+            src="../img/logos/Images/ligatures-full-new.svg"
+            alt="Ligatures Logo"
+            class="h-16 cursor-pointer hover:opacity-50 transition-opacity duration-300"
+            id="logoBtn"
+          />
+        </a>
+      </div>
+    </header>
+
+   
+    <div class="px-24">
+      <main class="max-w-7xl mx-auto px-8">
+        
+        <section class="grid grid-cols-2 gap-4 mb-1">
+          <div class="bg-white rounded-3xl p-8 text-black">
+            <h1 class="text-4xl font-bold mb-4 bg-clip-text text-black">
+              About Ligatures
+            </h1>
+            <h2 class="text-2xl mb-4 font-light italic">
+              Special Interest Research Initiative Group Description
+            </h2>
+            <p class="text-lg leading-relaxed">
+              Ligatures is a special interest research initiative group
+              exploring the multifaceted visual nature of letterforms.
+            </p>
+          </div>
+          <div class="bg-white rounded-3xl overflow-hidden">
+            <img
+              src="../img/6B2A1522 2.jpg"
+              alt="Research visual"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </section>
+
+        <section class="grid grid-cols-1 gap-1 mb-4">
+          <div
+            class="bg-white rounded-3xl p-8 text-black hover:shadow-2xl transition-shadow"
+          >
+            <p class="text-lg leading-relaxed tracking-wide">
+              The term "ligatures" refers to special characters in calligraphy
+              and typography, where different forms come together to create a
+              unique element. This symbolizes our aim to connect cultural,
+              political, technological, and health challenges and opportunities
+              through a design-based approach. By examining the design of
+              various written forms, calligraphy, and typography across
+              different cultures and technologies, we aim to reveal the rich
+              fabric of human expression through language as an artistic or
+              design process.
+            </p>
+          </div>
+
+          <div
+            class="bg-white rounded-3xl p-8 text-black hover:shadow-2xl transition-shadow"
+          >
+            <p class="text-lg leading-relaxed tracking-wide">
+              Ligatures' research focuses on recovering historical techniques,
+              exploring contemporary digital practices, and fostering
+              speculative, future-oriented design within current social
+              challenges to promote a more inclusive society.
+            </p>
+            <p class="text-lg mt-4 leading-relaxed tracking-wide italic">
+              According to Johanna Drucker (2022), typography and visual
+              language are tools that shape—and are shaped by—our communication.
+              They allow us to capture and interpret various cultural and
+              historical moments. Drucker argues that graphic design and its
+              visual materialization of language are essentially discursive and
+              political practices, where visual forms convey not just messages,
+              but also values and social norms. Therefore, exploring letterforms
+              and their evolution over time enables us to investigate and
+              promote social changes by reflecting and shaping these through
+              visual language.
+            </p>
+          </div>
+        </section>
+
+        <section class="grid grid-cols-3 gap-4 mb-4">
+          <div class="bg-white rounded-3xl overflow-hidden">
+            <img
+              src="../img/6B2A1513.jpg"
+              alt="Research visual"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="bg-white rounded-3xl overflow-hidden col-span-2">
+            <img
+              src="../img/6B2A1410.jpg"
+              alt="Research visual"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </section>
+
+        <section class="mb-4">
+          <div
+            class="bg-white rounded-3xl p-8 text-black transform hover:scale-[1.01] transition-transform"
+          >
+            <h2 class="text-3xl font-bold mb-6 pb-2 inline-block">
+              Mission and Action Lines
+            </h2>
+            <p class="text-lg mb-4 leading-relaxed">
+              The main mission of Ligatures is to promote and preserve cultural
+              heritage. To achieve this, we aim to foster intergenerational and
+              intercultural networks, celebrate diversity, encourage sustainable
+              behaviors, and advocate for inclusion and peace through visual and
+              discursive practices that reflect and engage with social and
+              cultural realities.
+            </p>
+            <div class="space-y-4 mt-6">
+              <div>
+                <h3
+                  class="text-xl font-bold relative pl-4 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 before:bg-black before:rounded-full"
+                >
+                  Key Lines of Action:
+                </h3>
+                <ul class="list-none pl-6 mt-2 space-y-2">
+                  <li
+                    class="flex items-center space-x-2 before:content-['•'] before:text-black before:font-bold before:text-xl"
+                  >
+                    Promoting cultural and heritage preservation
+                  </li>
+                  <li
+                    class="flex items-center space-x-2 before:content-['•'] before:text-black before:font-bold before:text-xl"
+                  >
+                    Fostering intergenerational and intercultural networks
+                  </li>
+                  <li
+                    class="flex items-center space-x-2 before:content-['•'] before:text-black before:font-bold before:text-xl"
+                  >
+                    Promoting equality and celebrating diversity
+                  </li>
+                  <li
+                    class="flex items-center space-x-2 before:content-['•'] before:text-black before:font-bold before:text-xl"
+                  >
+                    Encouraging sustainable behaviors and addressing climate
+                    change
+                  </li>
+                  <li
+                    class="flex items-center space-x-2 before:content-['•'] before:text-black before:font-bold before:text-xl"
+                  >
+                    Supporting secure, healthy, and fulfilling lives in a
+                    changing society
+                  </li>
+                  <li
+                    class="flex items-center space-x-2 before:content-['•'] before:text-black before:font-bold before:text-xl"
+                  >
+                    Advocating for peace, inclusion, and valuing diversity
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+       
+        <section class="mb-4">
+          <div class="bg-white rounded-3xl p-8 text-black">
+            <h2
+              class="text-3xl font-bold mb-6 text-center text-black bg-clip-text "
+            >
+              Research Topics
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div
+                class="p-6 rounded-xl bg-gray-300 backdrop-blur-sm hover:shadow-xl transition-shadow"
+              >
+                <h3 class="text-xl font-bold mb-3 flex items-center">
+                  <span class="w-2 h-2 bg-black rounded-full mr-2"></span>
+                  Historical Research
+                </h3>
+                <p class="leading-relaxed">
+                  Exploring the history of Graphic Design, including known or
+                  influential designers and lesser-known figures, their
+                  communities, and legacies. Studying past techniques to
+                  understand their impact on contemporary creations.
+                </p>
+              </div>
+              <div
+                class="p-6 rounded-xl bg-gray-300 backdrop-blur-sm hover:shadow-xl transition-shadow"
+              >
+                <h3 class="text-xl font-bold mb-3 flex items-center">
+                  <span class="w-2 h-2 bg-black rounded-full mr-2"></span>
+                  Technological Research
+                </h3>
+                <p class="leading-relaxed">
+                  Investigating traditional tools and processes like writing,
+                  graffiti, calligraphy, wood and lead type, typewriters, and
+                  letterpress printing. Exploring how these can integrate into
+                  modern hybrid design approaches.
+                </p>
+              </div>
+              <div
+                class="p-6 rounded-xl bg-gray-300 backdrop-blur-sm hover:shadow-xl transition-shadow"
+              >
+                <h3 class="text-xl font-bold mb-3 flex items-center">
+                  <span class="w-2 h-2 bg-black rounded-full mr-2"></span>
+                  Contemporary Digital Typeface Design
+                </h3>
+                <p class="leading-relaxed">
+                  Analyzing the state of the art in digital font design, tools,
+                  aesthetics, and functionality. Extending Latin writing to
+                  multi-script systems, pushing the boundaries of contemporary
+                  typography.
+                </p>
+              </div>
+              <div
+                class="p-6 rounded-xl bg-gray-300 backdrop-blur-sm hover:shadow-xl transition-shadow"
+              >
+                <h3 class="text-xl font-bold mb-3 flex items-center">
+                  <span class="w-2 h-2 bg-black rounded-full mr-2"></span>
+                  Speculative and Future-Oriented Design
+                </h3>
+                <p class="leading-relaxed">
+                  Exploring the latest advancements in parametric, dynamic, and
+                  generative systems, including AI, to imagine the future of
+                  typeface design and its social implications.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      
+        <section class="mb-4">
+          <div class="bg-white rounded-3xl p-8 text-black">
+            <h2 class="text-3xl font-bold mb-6 relative">Activity Plan</h2>
+            <h3 class="text-2xl mb-4 text-black">
+              Main Initiatives and Expected Outcomes
+            </h3>
+            <ul class="list-none pl-6 space-y-4">
+              <li class="flex items-start space-x-3">
+                <span class="text-black font-bold text-xl">•</span>
+                <span class="leading-relaxed"
+                  >Organize conferences and workshops (2 per year), starting
+                  with the open lecture "Living Lines" by Rui Abreu on October
+                  30, 2024</span
+                >
+              </li>
+              <li class="flex items-start space-x-3">
+                <span class="text-black font-bold text-xl">•</span>
+                <span class="leading-relaxed"
+                  >Hold an annual symposium or summer school with a guest
+                  speaker, resulting from a call for papers</span
+                >
+              </li>
+              <li class="flex items-start space-x-3">
+                <span class="text-black font-bold text-xl">•</span>
+                <span class="leading-relaxed"
+                  >Submit funding applications and integrate into research
+                  networks or funded projects</span
+                >
+              </li>
+              <li class="flex items-start space-x-3">
+                <span class="text-black font-bold text-xl">•</span>
+                <span class="leading-relaxed"
+                  >Establish partnerships with national and international
+                  entities</span
+                >
+              </li>
+              <li class="flex items-start space-x-3">
+                <span class="text-black font-bold text-xl">•</span>
+                <span class="leading-relaxed"
+                  >Launch a seed project for a hybrid digital/analog typeface
+                  based on Tia Lira by Manuel Pereira da Silva</span
+                >
+              </li>
+              <li class="flex items-start space-x-3">
+                <span class="text-black font-bold text-xl">•</span>
+                <span class="leading-relaxed"
+                  >Publish an annual peer-reviewed journal indexed on OAJ and
+                  Scopus, hosted on its own or UP's platform</span
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="grid grid-cols-3 gap-4 mb-4">
+          <div class="bg-white rounded-3xl overflow-hidden col-span-2">
+            <img
+              src="../img/6B2A1719 1.jpg"
+              alt="Research visual"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="bg-white rounded-3xl overflow-hidden">
+            <img
+              src="../img/20240723_173400.jpg"
+              alt="Research visual"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </section>
+
+        <section class="mb-4">
+          <div class="bg-white rounded-3xl p-8 text-black">
+            <h2 class="text-3xl font-bold mb-6 text-center">Members</h2>
+            <p class="text-lg mb-4 text-center max-w-3xl mx-auto">
+              The Ligatures Special Interest Group (SIG) is composed of a
+              diverse team of academic and research professionals from various
+              institutions.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8 mt-8">
+              <div class="bg-gray-300 rounded-xl p-6">
+                <h3 class="text-xl font-bold mb-3 text-red-700">
+                  Core Members:
+                </h3>
+                <ul class="list-none space-y-2">
+                  <li class="flex items-center space-x-2">
+                    <span class="w-1.5 h-1.5 bg-black rounded-full"></span>
+                    <span>Pedro Amado (SIG Moderator, i2ADS/FBAUP, PT)</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <span class="w-1.5 h-1.5 bg-black rounded-full"></span>
+                    <span>Cristina Ferreira (i2ADS/FBAUP, PT)</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <span class="w-1.5 h-1.5 bg-black rounded-full"></span>
+                    <span>Diniz Cayolla (i2ADS/FBAUP, PT)</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <span class="w-1.5 h-1.5 bg-black rounded-full"></span>
+                    <span>Fabrício Fava (i2ADS/FBAUP, PT)</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <span class="w-1.5 h-1.5 bg-black rounded-full"></span>
+                    <span>Graciela Machado (i2ADS/FBAUP, PT)</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bg-gray-300 rounded-xl p-6">
+                <h3 class="text-xl font-bold mb-3 text-red-700">
+                  Collaborators:
+                </h3>
+                <ul class="list-none space-y-2">
+                  <li class="flex items-center space-x-2">
+                    <span class="w-1.5 h-1.5 bg-black rounded-full"></span>
+                    <span>Catarina Silva (ESD-IPCA / ID+, PT)</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <span class="w-1.5 h-1.5 bg-black rounded-full"></span>
+                    <span>Vítor Quelhas (ESMAD-IPP / ID+, PT)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-4">
+          <div class="bg-white rounded-3xl p-8 text-black">
+            <h2 class="text-3xl font-bold mb-6">Partner Institutions</h2>
+            <p class="mb-4">
+              Póvoa do Varzim Municipal/Public Library: support for the MPS Lira
+              seed project research and activity host
+            </p>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">
+              Open Policy / Interest Expression for New Members
+            </h3>
+            <p>
+              Ligatures maintains an open policy for integrating members or
+              collaborators interested in participating in our initiatives or
+              collaborating on projects within our areas of interest through a
+              contact form or dedicated platform.
+            </p>
+          </div>
+        </section>
+
+        <section class="mb-4">
+          <div
+            class="bg-white rounded-3xl p-8 text-black hover:shadow-xl transition-shadow"
+          >
+            <h2 class="text-3xl font-bold mb-4 text-center">Contact</h2>
+            <div class="max-w-2xl mx-auto text-center">
+              <p class="mb-2 font-medium">
+                Contact information for the project team and ways to get
+                involved.
+              </p>
+              <p class="mb-2 text-red-700 font-bold">ligatures@fba.up.pt</p>
+              <address class="not-italic leading-relaxed">
+                Faculdade de Belas Artes da Universidade do Porto<br />
+                Avenida Rodrigues de Freitas, 265<br />
+                4049-021 Porto<br />
+                Portugal
+              </address>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="mt-16 p-8 border-t border-gray-800">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-sm text-gray-400 mb-4">
+          Faculdade de Belas Artes da Universidade do Porto, Avenida Rodrigues
+          de Freitas, 265, 4049-021, Porto Portugal
+        </div>
+        <div class="flex items-center justify-between flex-wrap gap-8">
+          <img
+            src="../img/logos/Logotypes/fbaup-white.svg"
+            alt="FBAUP Logo"
+            class="h-8"
+          />
+          <img
+            src="../img/logos/Logotypes/i2ads-white.svg"
+            alt="i2ADS Logo"
+            class="h-8"
+          />
+          <img
+            src="../img/logos/Logotypes/ipp-white.svg"
+            alt="IPP Logo"
+            class="h-8"
+          />
+          <img
+            src="../img/logos/Logotypes/esmad-white.svg"
+            alt="ESMAD Logo"
+            class="h-8"
+          />
+          <img
+            src="../img/logos/Logotypes/fct-white.svg"
+            alt="FCT Logo"
+            class="h-8"
+          />
+          <img
+            src="../img/logos/Logotypes/id+white.svg"
+            alt="ID+ Logo"
+            class="h-8"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const logoBtn = document.getElementById("logoBtn");
+      const navItems = document.querySelector(".nav-items");
+
+      logoBtn.addEventListener("click", () => {
+        navItems.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

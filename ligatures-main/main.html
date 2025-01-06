@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ligatures</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Helvetica Neue"', "Helvetica", "Arial", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      .nav-items {
+        opacity: 0;
+        transform: translateX(-20px);
+        pointer-events: none;
+        transition: all 300ms ease-in-out;
+      }
+      .nav-items.active {
+        opacity: 1;
+        transform: translateX(0);
+        pointer-events: auto;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white">
+    <main class="max-w-7xl mx-auto p-2">
+      <section>
+        <div class="grid grid-cols-2 gap-2 mb-2">
+          <div
+            class="bg-white rounded-3xl overflow-hidden aspect-square relative group cursor-pointer"
+            onclick="window.location.href='pages/about.html'"
+          >
+            <div class="absolute inset-0 flex items-center justify-center z-0">
+              <span class="text-8xl font-bold text-black">ABOUT</span>
+            </div>
+            <img
+              src="img/6B2A1522 2.jpg"
+              alt="Person writing"
+              class="w-full h-full object-cover opacity-100 group-hover:opacity-25 transition-opacity duration-300 relative z-10"
+            />
+          </div>
+          <div
+            class="bg-white rounded-3xl overflow-hidden aspect-square p-12 flex flex-col justify-center items-center text-center"
+          >
+            <h1 class="text-7xl font-bold mb-6 text-black tracking-tight">
+              Ligatures
+            </h1>
+            <div class="w-16 h-1 bg-black mb-6"></div>
+            <h2
+              class="text-2xl text-black/80 font-light leading-relaxed max-w-md"
+            >
+              Exploring the Materiality of Language
+            </h2>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-3xl p-8 text-black mt-4 text-center text-lg"
+        >
+          <p class="text-xl">
+            Ligatures is a special interest research initiative group dedicated
+            to exploring the multifaceted visual nature of letterforms.
+          </p>
+        </div>
+      </section>
+
+      <section class="grid grid-cols-3 gap-2 p-2 my-2">
+        <div
+          class="bg-white rounded-3xl overflow-hidden aspect-square relative group cursor-pointer"
+        >
+          <div class="absolute inset-0 flex items-center justify-center z-0">
+            <span class="text-4xl font-bold text-black">EVENTS</span>
+          </div>
+          <img
+            src="img/6B2A1350.jpg"
+            alt="Research and Publications"
+            class="w-full h-full object-cover opacity-100 group-hover:opacity-20 transition-opacity duration-300 relative z-10"
+          />
+        </div>
+        <div
+          class="bg-white rounded-3xl overflow-hidden aspect-square relative group cursor-pointer"
+        >
+          <div class="absolute inset-0 flex items-center justify-center z-0">
+            <span class="text-4xl font-bold text-black">RESEARCH</span>
+          </div>
+          <img
+            src="img/20240723_175923.jpg"
+            alt="Events and Activities"
+            class="w-full h-full object-cover opacity-100 group-hover:opacity-25 transition-opacity duration-300 relative z-10"
+          />
+        </div>
+        <div class="bg-white rounded-3xl overflow-hidden aspect-square">
+          <div class="w-full h-full flex items-center justify-center">
+            <img
+              src="img/logos/Images/ligatures-full-new-black.svg"
+              alt="Ligatures Logo"
+              class="h-36"
+            />
+          </div>
+        </div>
+      </section>
+      <div
+        class="bg-white rounded-3xl p-8 text-black flex justify-between items-center text-2xl font-semibold px-40"
+      >
+        <p
+          class="hover:underline hover:text-gray-400 transition-all duration-300 cursor-pointer"
+          onclick="window.location.href='pages/credits.html'"
+          >
+          Credits
+        </p>
+        <p
+          class="hover:underline hover:text-gray-400 transition-all duration-300 cursor-pointer"
+          onclick="window.location.href='pages/staff.html'"
+          >
+          Staff
+        </p>
+        <p
+          class="hover:underline hover:text-gray-400 transition-all duration-300 cursor-pointer"
+          onclick="window.location.href='pages/outputs.html'"
+        >
+          Outputs
+        </p>
+      </div>
+      <!-- <div
+        class="bg-gradient-to-b mt-4 from-white to-black rounded-t-3xl p-8 text-black"
+      >
+        <p class="text-lg"></p>
+        <p></p>
+      </div> -->
+    </main>
+
+    <footer class="mt-8 p-8 border-t border-gray-800">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-sm text-gray-400 mb-4">
+          Faculdade de Belas Artes da Universidade do Porto, Avenida Rodrigues
+          de Freitas, 265, 4049-021, Porto Portugal
+        </div>
+        <div class="flex items-center justify-between flex-wrap gap-8">
+          <a
+            href="https://www.fba.up.pt/"
+            target="_blank"
+            class="hover:opacity-75 transition-opacity"
+          >
+            <img
+              src="img/logos/Logotypes/fbaup-white.svg"
+              alt="FBAUP Logo"
+              class="h-8"
+            />
+          </a>
+          <a
+            href="https://i2ads.up.pt/"
+            target="_blank"
+            class="hover:opacity-75 transition-opacity"
+          >
+            <img
+              src="img/logos/Logotypes/i2ads-white.svg"
+              alt="i2ADS Logo"
+              class="h-8"
+            />
+          </a>
+          <a
+            href="https://www.ipp.pt/"
+            target="_blank"
+            class="hover:opacity-75 transition-opacity"
+          >
+            <img
+              src="img/logos/Logotypes/ipp-white.svg"
+              alt="IPP Logo"
+              class="h-8"
+            />
+          </a>
+          <a
+            href="https://www.esmad.ipp.pt/"
+            target="_blank"
+            class="hover:opacity-75 transition-opacity"
+          >
+            <img
+              src="img/logos/Logotypes/esmad-white.svg"
+              alt="ESMAD Logo"
+              class="h-8"
+            />
+          </a>
+          <a
+            href="https://www.fct.pt/"
+            target="_blank"
+            class="hover:opacity-75 transition-opacity"
+          >
+            <img
+              src="img/logos/Logotypes/fct-white.svg"
+              alt="FCT Logo"
+              class="h-8"
+            />
+          </a>
+          <a
+            href="https://idmais.org/"
+            target="_blank"
+            class="hover:opacity-75 transition-opacity"
+          >
+            <img
+              src="img/logos/Logotypes/id+white.svg"
+              alt="ID+ Logo"
+              class="h-8"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
